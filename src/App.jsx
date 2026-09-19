@@ -1,14 +1,31 @@
-import { useState } from 'react'
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
-import './App.css'
+import StudentCard from "./components/StudentCard"
 
 function App() {
  
 
   return (
     <>
-      <h1>Welcome to react My name is Bhaskar</h1>
-      <h2>this is secondday work</h2>
+      
+    <Header name="Bhaskar"/>
+
+    <main className='grid'>
+      
+      <StudentCard  title="Attendace" value="92%"/>
+      <StudentCard title="CGPA" value="8.95"/>
+      <StudentCard title="Courses" value="6"/>
+      
+    </main>
+
+
+
+    <Footer/>
+
+
+
+
     </>
   )
 }
